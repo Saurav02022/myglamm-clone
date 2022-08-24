@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./BootStrap/bootstrap.css" />
+    <link rel="stylesheet" href="SlideShow.css" />
+    <style>
+      .container-fluid {
+        border: 1px solid white;
+        height: auto;
+        background-color: #fee8e8;
+      }
+      .container {
+        margin-top: 10px;
+        height: auto;
+        width: 80%;
+        /* border: 1px solid red; */
+      }
+      .row {
+        height: 90%;
+      }
+      .col {
+        height: 100%;
+        /* border: 1px solid green; */
+      }
+      #FLAT {
+        display: flex;
+      }
+      img[src="https://www.myglamm.com/images/gift.svg"]
+      {
+        width: 20px;
+      }
+      img[src="https://www.myglamm.com/images/gift.svg"]+p
+      {
+        margin-left: 10px;
+        font-size: 12px;
+      }
+      .decoration {
+        text-decoration: none;
+        margin-left: 8px;
+      }
+      #Shop-Now {
+        margin-left: 30px;
+        color: #f77979;
+      }
+      #NavBar {
+        background-color: white;
+        /* border: 1px solid black; */
+        height: auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      #NavBar-First {
+        height: 40%;
+      }
+      #Company-Image {
+        height: auto;
+        width: 160px;
+      }
+      img[src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg"]
+      {
+        width: 25%;
+        flex-wrap: wrap;
+      }
+      #input {
+        height: auto;
+        width: 300px;
+        margin-left: 3%;
+        text-align: center;
+        font-size: 15px;
+        background-color: #f5f5f6;
+        border-color: #f5f5f6;
+        flex-wrap: wrap;
+      }
+      img[src="https://img.icons8.com/ios/50/000000/shopping-cart.png"]
+      {
+        width: 40px;
+        flex-wrap: wrap;
+      }
+      img[ src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/external-user-interface-kiranshastry-gradient-kiranshastry-1.png"]
+      {
+        width: 40px;
+        flex-wrap: wrap;
+      }
+      #Link {
+        width: 90%;
+        font-size: 14px;
+      }
+      .black {
+        color: black;
+        font-family: din-2014, sans-serif;
+      }
+      #SlideShow {
+        height: 420px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col" id="FLAT">
+            <img src="https://www.myglamm.com/images/gift.svg" alt="" />
+            <p>FLAT 199 Store</p>
+            <a href="#" id="Shop-Now" class="decoration">SHOP NOW</a>
+          </div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col">
+            <img src="https://www.myglamm.com/images/shop.svg" alt="" />
+            <a href="" class="decoration" style="color: black; font-size: 14px"
+              >MyGlamm Store</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="NavBar">
+      <div class="container" id="NavBar-First">
+        <div class="row">
+          <div class="col" id="Company-Image">
+            <img
+              src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg"
+              alt=""
+            />
+            <input
+              type="text"
+              name=""
+              id="input"
+              placeholder="Find Lipstick,Eyeliner,Makeup Tutorial ,etc"
+            />
+          </div>
+
+          <div class="col">
+            <div class="row">
+              <div class="col"></div>
+              <div class="col">
+                <a href=""
+                  ><img
+                    src="https://img.icons8.com/ios/50/000000/shopping-cart.png"
+                /></a>
+                <a href="">
+                  <img
+                    src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/external-user-interface-kiranshastry-gradient-kiranshastry-1.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second -->
+      <div class="container">
+        <ul class="nav" id="Link">
+          <li class="nav-item">
+            <a href="" class="nav-link active black">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link active black">MAKEUP</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link active black">HAIRCARE</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link active black">SKINCARE</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link active black">SANITIZING CARE</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link active black">COLLECTION</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link active black">REWARDS</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link active black">MYGLAMM STUDIO</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link active black">OFFERS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="SlideShow">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img
+            src="https://files.myglamm.com/site-images/original/Desktop_1.jpg"
+            style="width: 100%"
+          />
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img
+            src="https://files.myglamm.com/site-images/original/1920-X-527-C.jpg"
+            style="width: 100%"
+          />
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img
+            src="https://files.myglamm.com/site-images/original/1920x527-c.jpg"
+            style="width: 100%"
+          />
+          <div class="text">Caption Three</div>
+        </div>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>
+    </div>
+  </body>
+</html>
