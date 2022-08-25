@@ -1,7 +1,11 @@
+
+
 .container-fluid {
   border: 1px solid white;
   height: auto;
-  background-color: #fee8e8;
+}
+.pink{
+  background-color: #fee8e8
 }
 .container {
   margin-top: 10px;
@@ -142,15 +146,32 @@ img[src="https://files.myglamm.com/site-images/original/2240x614-copy_6.jpg"]
 }
 
 #Footer {
-  height: 600px;
+  height:auto;
 }
-/* .col {
-  border: 1px solid red;
-} */
+
 .black{
   color: black;
 }
 .size{
-  font-size: 13px;
-  font-family: sans-serif;
+  font-size: 14px;
+  font-family:din-2014, sans-serif ;
+}
+#Most-Last{
+  height:auto;
+  width:100%;
+}
+.Suscribe{
+  font-weight:600;
+}
+.media{
+  width:700px;
+  /* border:1px solid red; */
+}
+#Icons{
+  display:flex;
+}
+.img-size{
+  margin-left:10px;
+  margin-top:15px;
+  height:30px;
 }
