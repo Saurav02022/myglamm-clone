@@ -54,6 +54,7 @@ img[src="https://www.myglamm.com/images/gift.svg"]+p
 #Company-Image {
   height: auto;
   width: 160px;
+  display: flex;
 }
 img[src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg"]
 {
