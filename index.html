@@ -11,9 +11,17 @@
     <link rel="stylesheet" href="SlideShow.css" />
 
     <link rel="stylesheet" href="index.css" />
+
+    <link rel="icon" href="https://media.glassdoor.com/sqll/1375928/myglamm-squareLogo-1612962866480.png">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="container-fluid">
+     <!-- Start => NavBar -->
+    <div class="container-fluid pink fixed-top">
       <div class="container">
         <div class="row">
           <div class="col" id="FLAT">
@@ -31,38 +39,39 @@
           </div>
         </div>
       </div>
+      
     </div>
 
-    <div class="container-fluid" id="NavBar">
+    <div class="container-fluid sticky-top mt-5" id="NavBar">
       <div class="container" id="NavBar-First">
-        <div class="row">
-          <div class="col" id="Company-Image">
+        <div class="row ">
+          <div class="col marginTop " id="Company-Image">
             <img
               src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg"
               alt=""
             />
-            <input
-              type="text"
-              name=""
-              id="input"
-              placeholder="Find Lipstick,Eyeliner,Makeup Tutorial ,etc"
-            />
+            <form action="" class="form inline">
+              <input
+                type="search"
+                name=""
+                id="input"
+                placeholder="Find Lipstick,Eyeliner,Makeup Tutorial ,etc"
+                class="form-control"
+              />
+            </form>
           </div>
 
-          <div class="col">
+          <div class="col marginTop">
             <div class="row">
               <div class="col"></div>
-              <div class="col">
+              <div class="col" style="display:flex ;">
                 <a href=""
                   ><img
                     src="https://img.icons8.com/ios/50/000000/shopping-cart.png"
                 /></a>
-                <a href="">
-                  <img
-                    src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/external-user-interface-kiranshastry-gradient-kiranshastry-1.png"
-                    alt=""
-                  />
-                </a>
+                <button class="btn" onclick="Sign()">SignUp/SignIn</button>
+                <p id="Display-Name"></p>
+                
               </div>
             </div>
           </div>
@@ -71,41 +80,41 @@
       <!-- Second -->
       <div class="container">
         <ul class="nav" id="Link">
-          <li class="nav-item">
-            <a href="" class="nav-link active black">HOME</a>
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link active black">HOME</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="" class="nav-link active black">MAKEUP</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="" class="nav-link active black">HAIRCARE</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="" class="nav-link active black">SKINCARE</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="" class="nav-link active black">SANITIZING CARE</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="" class="nav-link active black">COLLECTION</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="" class="nav-link active black">REWARDS</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="" class="nav-link active black">MYGLAMM STUDIO</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="" class="nav-link active black">OFFERS</a>
           </li>
         </ul>
       </div>
     </div>
-
+<!-- End = > NavBar -->
     <div id="SlideShow">
       <div class="slideshow-container">
         <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
+          <div class="numbertext"></div>
           <a href=""
             ><img
               src="https://files.myglamm.com/site-images/original/Desktop_1.jpg"
@@ -116,7 +125,7 @@
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
+          <div class="numbertext"></div>
           <a href="">
             <img
               src="https://files.myglamm.com/site-images/original/1920-X-527-C.jpg"
@@ -127,7 +136,7 @@
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
+          <div class="numbertext"></div>
           <a href="">
             <img
               src="https://files.myglamm.com/site-images/original/1920x527-c.jpg"
@@ -172,11 +181,14 @@
     </div>
 
     <div class="container" id="Redeem-50">
-      <img
+      <a href="">
+        <img
         src="https://files.myglamm.com/site-images/original/2240x614-copy_6.jpg"
         width="100%"
         alt=""
       />
+      </a>
+     
     </div>
 
     <h1 class="Spot-h1">IN THE SPOTLIGHT</h1>
@@ -228,32 +240,41 @@
     </div>
 
     <div class="container" id="Coffee">
-      <img
+      <a href="">
+        <img
         src="https://files.myglamm.com/site-images/original/2240x614-Sleek-desktop_1.gif"
         alt=""
         class="img-fluid"
       />
+      </a>
+      
     </div>
 
     <h1 class="Spot-h1">BANK TRANSFER</h1>
 
     <div class="container" id="Bank-Transfer">
       <div class="shadow-lg p-3 mb-5 bg-white rounded">
-        <img
+        <a href="">
+          <img
           src="https://files.myglamm.com/site-images/original/IDFC-offer-3360x279_4.jpg"
           alt=""
           class="img-fluid"
         />
+        </a>
+        
         <h5 class="text-center mt-3">IDFC FIRST BANK</h5>
         <p class="text-center">IDFC FIRST BANK</p>
       </div>
 
       <div id="last-img" class="shadow-lg p-3 mb-5 bg-white rounded">
-        <img
+        <a href="">
+          <img
           src="https://files.myglamm.com/site-images/original/IDFC-offer-3360x279_3.jpg"
           alt=""
           class="img-fluid"
         />
+        </a>
+        
         <h5 class="text-center mt-3">Au Small Finance Bank</h5>
         <p class="text-center">Au Small Finance Bank</p>
       </div>
@@ -593,19 +614,25 @@
       </div>
     </div>
     <div class="container mt-4">
-      <img
+      <a href="">
+        <img
         src="https://files.myglamm.com/site-images/original/Community-Banner-2240-x-344_1.jpg"
         alt=""
         class="img-fluid shadow p-3 mb-5 bg-white rounded"
       />
+      </a>
+      
     </div>
 
     <div class="container mt-4 w-75">
-      <img
+      <a href="">
+        <img
         src="https://files.myglamm.com/site-images/original/disclaimer-mgp_1.png"
         alt=""
         class="img-fluid"
       />
+      </a>
+      
     </div>
 
     <div class="container">
@@ -618,6 +645,7 @@
                   class="shadow-1-strong rounded"
                   src="https://www.myglamm.com/images/TellMyGlammWhatYouWant.webm"
                   title="Brand video"
+                  autoplay
                   allowfullscreen
                 ></iframe>
               </div>
@@ -626,469 +654,569 @@
         </section>
       </footer>
     </div>
-    <div class="container-fluid mt-3">
-      <div class="container" id="Footer">
+
+    <!-- Start = > Footer -->
+
+    <div class="container-fluid mt-4 shadow-lg p-3 mb-5 bg-white rounded">
+      <div class="container mt-3" id="Footer">
         <div class="row">
           <div class="col">
-            <a href="" class="text-wrap text-decoration-none lead text-secondary size mb-4"
+            <a
+              href=""
+              class="text-wrap text-decoration-none lead text-secondary size mb-4"
               >LIPS</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Lipstick</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Matte Lipstick</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Hi-Shine Lipstick</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Liquid Lipstick</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Lip Gloss</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Hi-Shine Lipgloss</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Lip Liner</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Lip Balm</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Glitter</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Lip Stain</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Lipstick Set</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Lip Kit</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Find Your Lipstick</a
-            > <br>
+            >
+            <br />
           </div>
 
           <div class="col">
-            <a href="" class="text-wrap text-decoration-none lead text-secondary size"
+            <a
+              href=""
+              class="text-wrap text-decoration-none lead text-secondary size"
               >FACE</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Face Sets</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Fixing Powder</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Primer</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Concealer</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Foundation</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Compact</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Banana Powder</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Highlighter</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Blush</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Bronzer</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Sindoor</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Setting Powder</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Makeup Accessories</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Makeup Brushes</a
-            > <br>
+            >
+            <br />
           </div>
 
           <div class="col">
-            <a href="" class="text-wrap text-decoration-none lead text-secondary size"
+            <a
+              href=""
+              class="text-wrap text-decoration-none lead text-secondary size"
               >EYES</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Eye shadow</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Eyeliner</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Eyebrows</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Glitter</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Mascara</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Kajal</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Eyeshadow Brushes</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Eye Combos</a
-            > <br>
-           
+            >
+            <br />
           </div>
 
           <div class="col">
-            <a href="" class="text-wrap text-decoration-none lead text-secondary size"
+            <a
+              href=""
+              class="text-wrap text-decoration-none lead text-secondary size"
               >Nails</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Nail Polish</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Matte</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Nail Polish</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Nail Lacquer</a
-            > <br>
-           
+            >
+            <br />
           </div>
           <!-- Nails -->
           <div class="col">
-            <a href="" class="text-wrap text-decoration-none lead text-secondary size"
+            <a
+              href=""
+              class="text-wrap text-decoration-none lead text-secondary size"
               >SKINCARE</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Moisturiser</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Night Cream</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Eye Cream</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Body lotion</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Serum</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Sunscreen</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Skincare Kits</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Cleansing Products</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Exfoliator & Scrub</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Face Wash</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Cleanser</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Mask</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Face Pack</a
-            > <br>
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
               >Sheet Mask</a
-            > <br>
+            >
+            <br />
           </div>
 
-          <!-- Yaha tak hoo gaya hai -->
-          
           <div class="col">
-            <a href="" class="text-wrap text-decoration-none lead text-secondary size"
-              >LIPS</a
-            > <br>
+            <a
+              href=""
+              class="text-wrap text-decoration-none lead text-secondary size"
+              >BATH & BODY</a
+            >
+            <br />
+
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick</a
-            > <br>
+              >Shower Gels</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Matte Lipstick</a
-            > <br>
+              >Soaps</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipstick</a
-            > <br>
+              >Body Lotion</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Liquid Lipstick</a
-            > <br>
+              >Body Spray & Mists</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Gloss</a
-            > <br>
+              >Hand Wash</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipgloss</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Liner</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Balm</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Glitter</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Stain</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick Set</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Kit</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Find Your Lipstick</a
-            > <br>
+              >Foot Cream</a
+            >
+            <br />
           </div>
           <div class="col">
-            <a href="" class="text-wrap text-decoration-none lead text-secondary size"
-              >LIPS</a
-            > <br>
+            <a
+              href=""
+              class="text-wrap text-decoration-none lead text-secondary size"
+              >SANITIZING CARE</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick</a
-            > <br>
+              >Sanitizing Wipes</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Matte Lipstick</a
-            > <br>
+              >Sanitizing Kits</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipstick</a
-            > <br>
+              >Sanitizing Spray</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Liquid Lipstick</a
-            > <br>
+              >Hand Sanitizer</a
+            >
+            <br />
+          </div>
+
+          <div class="col">
+            <a
+              href=""
+              class="text-wrap text-decoration-none lead text-secondary size"
+              >KITS AND COMBOS</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Gloss</a
-            > <br>
+              >Makeup Kits</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipgloss</a
-            > <br>
+              >Bridal Makeup Kits</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Liner</a
-            > <br>
+              >Makeup Combo</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Balm</a
-            > <br>
+              >Makeup Gift Sets</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Glitter</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Stain</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick Set</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Kit</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Find Your Lipstick</a
-            > <br>
+              >Cosmetics Kits & Combos</a
+            >
+            <br />
           </div>
           <div class="col">
-            <a href="" class="text-wrap text-decoration-none lead text-secondary size"
-              >LIPS</a
-            > <br>
+            <a
+              href=""
+              class="text-wrap text-decoration-none lead text-secondary size"
+              >HAIRS CARE</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick</a
-            > <br>
+              >Shampoo</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Matte Lipstick</a
-            > <br>
+              >Conditioner</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipstick</a
-            > <br>
+              >Hair Oil</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Liquid Lipstick</a
-            > <br>
+              >Serum</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Gloss</a
-            > <br>
+              >Hair Mask</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipgloss</a
-            > <br>
+              >Combos</a
+            >
+            <br />
+          </div>
+
+          <div class="col">
+            <a
+              href=""
+              class="text-wrap text-decoration-none lead text-secondary size"
+              >MYGLAMMSTUDIO</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Liner</a
-            > <br>
+              >Style</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Balm</a
-            > <br>
+              >Lifestyle</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Glitter</a
-            > <br>
+              >Trends</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Stain</a
-            > <br>
+              >Tips</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick Set</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Kit</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Find Your Lipstick</a
-            > <br>
+              >Beauty Tutorial</a
+            >
+            <br />
           </div>
           <div class="col">
-            <a href="" class="text-wrap text-decoration-none lead text-secondary size"
-              >LIPS</a
-            > <br>
+            <a
+              href=""
+              class="text-wrap text-decoration-none lead text-secondary size"
+              >KNOW MORE</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick</a
-            > <br>
+              >About Us</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Matte Lipstick</a
-            > <br>
+              >Exclusive Offers</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipstick</a
-            > <br>
+              >Refer & Earn</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Liquid Lipstick</a
-            > <br>
+              >myglammPARTIES</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Gloss</a
-            > <br>
+              >Store Locator</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipgloss</a
-            > <br>
+              >Press & Media</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Liner</a
-            > <br>
+              >Terms & Conditions</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Balm</a
-            > <br>
+              >Privacy Policy</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Glitter</a
-            > <br>
+              >Shipping and Delivery Policy</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Stain</a
-            > <br>
+              >Returns and Replacements</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick Set</a
-            > <br>
+              >MyGlamm Rewards</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Kit</a
-            > <br>
+              >Loyalty Program Policy</a
+            >
+            <br />
             <a href="" class="text-wrap text-decoration-none small black size"
-              >Find Your Lipstick</a
-            > <br>
+              >Sitemap</a
+            >
+            <br />
+            <a href="" class="text-wrap text-decoration-none small black size"
+              >Reponsible Disclosure</a
+            >
+            <br />
           </div>
-          <div class="col">
-            <a href="" class="text-wrap text-decoration-none lead text-secondary size"
-              >LIPS</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Matte Lipstick</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipstick</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Liquid Lipstick</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Gloss</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipgloss</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Liner</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Balm</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Glitter</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Stain</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick Set</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Kit</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Find Your Lipstick</a
-            > <br>
+        </div>
+        <div class="container" id="Most-Last">
+          <div class="row">
+            <div class="col">
+              <h5 class="size Suscribe">SUBSCRIBE FOR MYGLAMM EMAILS</h5>
+              <form action="">
+                <input type="text" />
+                <input type="submit" value="SUBSCRIBE NOW" class="mt-1" />
+              </form>
+            </div>
+            <div class="media">
+              <div class="row">
+                <div class="col" id="Icons">
+                  <p class="text-uppercase size mt-4">Stay Connected</p>
+                  <a href="">
+                    <img
+                      src="./BootStrap/node_modules/bootstrap-icons/icons/instagram.svg"
+                      alt=""
+                      class="img-fluid img-size"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./BootStrap/node_modules/bootstrap-icons/icons/twitter.svg"
+                      alt=""
+                      class="img-fluid img-size"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./BootStrap/node_modules/bootstrap-icons/icons/facebook.svg"
+                      alt=""
+                      class="img-fluid img-size"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./BootStrap/node_modules/bootstrap-icons/icons/youtube.svg"
+                      alt=""
+                      class="img-fluid img-size"
+                    />
+                  </a>
+                </div>
+                <div class="col">
+                  <h5 class="size Suscribe">
+                    EXPERIENCE THE MYGLAMM MOBILE APP
+                  </h5>
+                  <div class="row">
+                    <div class="col">
+                      <a href="">
+                        <img
+                          src="https://www.myglamm.com/images/iosStore.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="">
+                        <img
+                          src="https://www.myglamm.com/images/playStore.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col">
-            <a href="" class="text-wrap text-decoration-none lead text-secondary size"
-              >LIPS</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Matte Lipstick</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipstick</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Liquid Lipstick</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Gloss</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipgloss</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Liner</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Balm</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Glitter</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Stain</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick Set</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Kit</a
-            > <br>
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Find Your Lipstick</a
-            > <br>
-          </div>
-          
         </div>
       </div>
     </div>
+
+    <!-- End = > Footer -->
   </body>
 </html>
+<script>
+  function Sign(){
+  window.location="Signup.html"  
+}
+
+let DataArr = JSON.parse(localStorage.getItem("input"))
+
+DataArr.forEach(function(ele){
+
+  let Display = document.getElementById("Display-Name")
+
+  Display.append (ele.Name)
+})
+</script>
