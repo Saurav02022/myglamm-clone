@@ -127,8 +127,13 @@
           />
           <form action="">
             <div class="form-group">
-              <label for="">Name</label>
-              <input type="text" class="form-control mt-1" id="Name" />
+              <label for=""> First-Name</label>
+              <input type="text" class="form-control mt-1" id="First-Name" />
+            </div>
+
+            <div class="form-group">
+              <label for=""> Last-Name</label>
+              <input type="text" class="form-control mt-1" id="Last-Name" />
             </div>
 
             <div class="form-group">
@@ -155,7 +160,7 @@
               />
             </div>
           </form>
-          <p class="text-center">
+          <p class="text-center mt-3">
             By Signing up you agree to our
             <a
               href="https://www.myglamm.com/policies"
@@ -163,13 +168,13 @@
               >Terms & Conditions</a
             >
           </p>
-          <p class="text-center">If You are Existing User</p>
+          
 
           <a href="Login.html">
             <button
-              class="btn mt-2 bg-primary text-white text-center form-control"
+              class="btn mt-1 bg-primary text-white text-center form-control"
             >
-              Signin
+              Already Existing Customer
             </button>
           </a>
         </div>
@@ -743,7 +748,9 @@
 
   function fun(event) {
     event.preventDefault();
-    let Name = document.getElementById("Name").value;
+    let FirstName = document.getElementById("First-Name").value;
+
+    let LastName = document.getElementById("Last-Name").value;
 
     let Email = document.getElementById("Email").value;
 
@@ -752,13 +759,14 @@
     let Password = document.getElementById("Password").value;
 
     DataArr.map(function (ele) {
-      if (ele.Email == Email) {
+      if (ele.Email == Email || ele.Password==Password) {
         flag = true;
       }
     });
 
     if (
-      Name == "" ||
+      FirstName==""||
+      LastName == "" ||
       Email == "" ||
       Mobile == "" ||
       Password == "" ||
@@ -767,7 +775,8 @@
       alert("Please fill the Correct information");
     } else {
       let DataObj = {
-        Name,
+        FirstName,
+        LastName,
         Email,
         Mobile,
         Password,
