@@ -70,9 +70,12 @@
                   ><img
                     src="https://img.icons8.com/ios/50/000000/shopping-cart.png"
                 /></a>
-                <p id="Display-Name">
-                  <button class="btn" onclick="Sign()">SignUp/SignIn</button>
-                </p>
+                <a href="Login.html">
+                  <img
+                    src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/external-user-interface-kiranshastry-gradient-kiranshastry-1.png"
+                    alt=""
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -168,7 +171,6 @@
               >Terms & Conditions</a
             >
           </p>
-          
 
           <a href="Login.html">
             <button
@@ -734,12 +736,8 @@
     <!-- End = > Footer -->
   </body>
 </html>
-<!-- <script src="Signup.js"></script> -->
-<script>
-  function Sign() {
-    window.location = "Signup.html";
-  }
 
+<script>
   document.querySelector("#Submit").addEventListener("click", fun);
 
   let DataArr = JSON.parse(localStorage.getItem("input")) || [];
@@ -759,20 +757,24 @@
     let Password = document.getElementById("Password").value;
 
     DataArr.map(function (ele) {
-      if (ele.Email == Email || ele.Password==Password) {
-        flag = true;
+      if (ele.Email == Email) {
+        return (flag = true);
       }
     });
 
-    if (
-      FirstName==""||
-      LastName == "" ||
-      Email == "" ||
-      Mobile == "" ||
-      Password == "" ||
-      flag == true
-    ) {
-      alert("Please fill the Correct information");
+    if (FirstName == "") {
+      alert("Please fill Your First Name");
+    } else if (LastName == "") {
+      alert("Please fill Your Last Name");
+    } else if (Email == "") {
+      alert("Please fill Your Email");
+    } else if (Mobile == "") {
+      alert("Please fill Your Mobile Number");
+    } else if (Password == "") {
+      alert("Please fill Your Passsword");
+    } else if (flag == true) {
+      alert("Already registered User Please Login");
+      window.location = "Login.html";
     } else {
       let DataObj = {
         FirstName,
@@ -787,5 +789,28 @@
 
       window.location = "Login.html";
     }
+    // if (
+    //   FirstName==""||
+    //   LastName == "" ||
+    //   Email == "" ||
+    //   Mobile == "" ||
+    //   Password == "" ||
+    //   flag == true
+    // ) {
+    //   alert("Please fill the Correct information");
+    // } else {
+    //   let DataObj = {
+    //     FirstName,
+    //     LastName,
+    //     Email,
+    //     Mobile,
+    //     Password,
+    //   };
+    //   DataArr.push(DataObj);
+
+    //   localStorage.setItem("input", JSON.stringify(DataArr));
+
+    //   window.location = "Login.html";
+    // }
   }
 </script>

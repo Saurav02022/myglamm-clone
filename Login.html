@@ -70,8 +70,13 @@
                     ><img
                       src="https://img.icons8.com/ios/50/000000/shopping-cart.png"
                   /></a>
-                  <p id="Display-Name"><button class="btn" onclick="Sign()">SignUp/SignIn</button></p>
-                  
+                  <a href="SignUp.html">
+                    <img
+                      src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/external-user-interface-kiranshastry-gradient-kiranshastry-1.png"
+                      alt=""
+                    />
+                  </a>
+                  <p id="Display-Name"></p>
                 </div>
               </div>
             </div>
@@ -675,6 +680,7 @@
                     class="img-fluid img-size"
                   />
                 </a>
+                <p id="Display-Name"></p>
               </div>
               <div class="col">
                 <h5 class="size Suscribe">
@@ -715,6 +721,10 @@
 
 <script>
 
+let Display = document.getElementById("Display-Name")
+
+
+
    document.getElementById("Login").addEventListener("click",fun)
   
 
@@ -722,30 +732,51 @@
 
 
 
-   let flag;
+   let GetName = [];
 
   function fun()
   {
     event.preventDefault();
-    GetData.forEach(function(ele){
+    GetData.forEach(function(ele,index){
 
       let Email = document.getElementById("Email").value;
 
-let Password = document.getElementById("Password").value;
+      let Password = document.getElementById("Password").value;
 
-    if(Email==ele.Email && Password==ele.Password){
-      flag = true
-    }else if(Email!==ele.Email || Password!==ele.Password){
-    flag = false
-    }
+      if(Email==ele.Email)
+      {
+        if(Password==ele.Password)
+        {
+          flag=true
+
+        GetName.push(ele)
+        localStorage.setItem("GetName",JSON.stringify(GetName))
+        }else{
+          flag=false
+        }
+      }
+      
   })
 
   if(flag===true){
    window.location="index.html"
-  }else{
-    alert("Please Enter Correct Detail")
+  }else if(flag==false)
+  {
+    alert("Please Enter correct Detail")
   }
   }
 
+let name = JSON.parse(localStorage.getItem("GetName"))
+
+name.map(function(ele){
+Display.append(ele.FirstName)
+})
+Display.addEventListener("click",JaaBhai)
+
+function JaaBhai()
+{
+  localStorage.removeItem("GetName")
+  window.location="index.html"
+}
   
 </script>
