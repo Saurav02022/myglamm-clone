@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SignUp</title>
+    <title>Makeup - Buy Makeup Products</title>
+
     <link rel="stylesheet" href="./BootStrap/bootstrap.css" />
 
     <link rel="stylesheet" href="index.css" />
@@ -13,16 +14,52 @@
       rel="icon"
       href="https://media.glassdoor.com/sqll/1375928/myglamm-squareLogo-1612962866480.png"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
     <style>
-      #Form {
-        height: auto;
-        width: 30%;
+      #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        width: 80%;
         margin: auto;
+      }
+      .bold {
+        font-weight: bold;
+        font-size: 27px;
+        font-family: sans-serif;
+      }
+      .tit {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: sans-serif;
+      }
+      .dis {
+        font-size: 18px;
+        letter-spacing: 0.66px;
+        font-family: sans-serif;
+      }
+
+      @media all and (min-width: 650px) and (max-width: 800px) {
+        #container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media all and (min-width: 220px) and (max-width: 650px) {
+        #container {
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
     </style>
   </head>
   <body>
     <!-- Start => NavBar -->
+
     <div class="container-fluid pink fixed-top">
       <div class="container">
         <div class="row">
@@ -70,12 +107,13 @@
                   ><img
                     src="https://img.icons8.com/ios/50/000000/shopping-cart.png"
                 /></a>
-                <a href="Login.html">
+                <a href="SignUp.html">
                   <img
                     src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/external-user-interface-kiranshastry-gradient-kiranshastry-1.png"
                     alt=""
                   />
                 </a>
+                <p id="Display-Name"></p>
               </div>
             </div>
           </div>
@@ -88,7 +126,7 @@
             <a href="index.html" class="nav-link active black">HOME</a>
           </li>
           <li class="nav-item active">
-            <a href="MakeUp.html" class="nav-link active black">MAKEUP</a>
+            <a href="" class="nav-link active black">MAKEUP</a>
           </li>
           <li class="nav-item active">
             <a href="" class="nav-link active black">HAIRCARE</a>
@@ -115,75 +153,379 @@
       </div>
     </div>
 
-    <!-- End => NavBar -->
+    <!-- End = > NavBar -->
+    <div class="text-center mt-3">
+      <p>Home/MAKEUP</p>
+    </div>
+    <hr width="80%" style="margin: auto" />
 
-    <!-- Start => Signup -->
+    <h1 class="text-center font-weight-bold" id="">MAKEUP</h1>
 
-    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded" id="Form">
-      <div class="row">
-        <div class="col">
-          <p class="text-center">Get 15% Good Points back on every order</p>
-          <img
-            src="https://www.myglamm.com/images/myglamm-logo.png"
-            alt=""
-            class="img-fluid"
-          />
-          <form action="">
-            <div class="form-group">
-              <label for=""> First-Name</label>
-              <input type="text" class="form-control mt-1" id="First-Name" />
-            </div>
-
-            <div class="form-group">
-              <label for=""> Last-Name</label>
-              <input type="text" class="form-control mt-1" id="Last-Name" />
-            </div>
-
-            <div class="form-group">
-              <label for="">Email</label>
-              <input type="email" class="form-control mt-1" id="Email" />
-            </div>
-
-            <div class="form-group">
-              <label for="">Mobile Number</label>
-              <input type="number" class="form-control mt-1" id="Mobile" />
-            </div>
-
-            <div class="form-group">
-              <label for="">Password</label>
-              <input type="password" class="form-control mt-1" id="Password" />
-            </div>
-
-            <div class="form-group">
-              <input
-                type="submit"
-                class="form-control mt-2 bg-primary text-white"
-                id="Submit"
-                value="Signup"
-              />
-            </div>
-          </form>
-          <p class="text-center mt-3">
-            By Signing up you agree to our
-            <a
-              href="https://www.myglamm.com/policies"
-              class="text-decoration-none black font-weight-bold text-secondary"
-              >Terms & Conditions</a
-            >
-          </p>
-
-          <a href="Login.html">
-            <button
-              class="btn mt-1 bg-primary text-white text-center form-control"
-            >
-              Already Existing Customer
-            </button>
-          </a>
-        </div>
+    <div class="container" id="container">
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/STRBNG-(1).png"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">MANISH MALHOTRA STROBING CREAM</p>
+        <p class="card-text dis">
+          Versatile Illuminator With A Blend of 3 Hyaluronic Acids
+        </p>
+        <p class="bold">₹ 1550</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Goldfk-(1)_1.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">MANISH MALHOTRA GOLD FLAKE LIP GLOSS</p>
+        <p class="card-text dis">
+          Ultra-glamorous lip gloss for glass-like shine
+        </p>
+        <p class="bold">₹ 1250</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/BLCKPRTY-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          MYGLAMM LIT GLOSSY LIQUID EYELINER - BLACK PARTY
+        </p>
+        <p class="card-text dis">Up To 24HR Smudge-Proof Coloured Eyeliner</p>
+        <p class="bold">₹ 325</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Artboard-1-(1)-(2).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">MYGLAMM SUPERFOODS KAJAL - RAVEN - 0.35G</p>
+        <p class="card-text dis">
+          Long-Wear Smudge-Proof Kajal Infused With Natural Superfood Extracts
+        </p>
+        <p class="bold">₹ 276</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Beat-(1)_1.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          MYGLAMM LIT RADIANT MATTE COMPACT POWDER - BEAT
+        </p>
+        <p class="card-text dis">Illuminating Matte Pressed Powder</p>
+        <p class="bold">₹ 420</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Hott-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          MYGLAMM LIT LIQUID MATTE LIPSTICK - HOT HOTTIE
+        </p>
+        <p class="card-text dis">Moringa Oil Enriched Matte Lipstick</p>
+        <p class="bold">₹ 395</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/RSEAD-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">MYGLAMM LIT - PH LIP BALM - ROSE ALL DAY</p>
+        <p class="card-text dis">
+          Creamy, Hydrating Formula with a Luminous Effect
+        </p>
+        <p class="bold">₹ 345</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/open-product-with-side-bar_2.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">POPXO MAKEUP - NO DRAMA - MINI LIP KIT</p>
+        <p class="card-text dis">
+          Mini Lipstick kit with 3 creamy-matte nude lipsticks
+        </p>
+        <p class="bold">₹ 279</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Fakeid-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          MYGLAMM LIT VELVET MATTE LIQUID LIPSTICK - FAKE ID
+        </p>
+        <p class="card-text dis">Hydrating, Velvet Matte Liquid Lipcolour</p>
+        <p class="bold">₹ 395</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/open-product-with-side-bar_5.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">POPXO 12 EYESHADOW KIT - SQUAD GOALS</p>
+        <p class="card-text dis">
+          Eyeshadow palette with 6 matte and 6 shimmer shades
+        </p>
+        <p class="bold">₹ 381</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Cosmo-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          PERFECT CURVES MATTE LIP CRAYON - COSMOPOLITAN
+        </p>
+        <p class="card-text dis">Moisturising Matte Lipstick</p>
+        <p class="bold">₹ 590</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Party-parade-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          MYGLAMM TWO OF YOUR KIND NAIL ENAMEL- PARTY PARADE
+        </p>
+        <p class="card-text dis">Long-Lasting Gel Finish Nail Enamel Set</p>
+        <p class="bold">₹ 265</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/open-side-product-side-bar.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">POPXO MAKEUP - HUSTLIN’ MINI NAIL KIT</p>
+        <p class="card-text dis">
+          Mini Nail Polish set with 5 chip-resistant bold nail polishes
+        </p>
+        <p class="bold">₹ 224</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/open-product-with-side-bar_4.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          POPXO MAKEUP - SEND NOODS - 4 EYESHADOW KIT
+        </p>
+        <p class="card-text dis">
+          Eyeshadow palette with 2 shimmer and 2 matte shades
+        </p>
+        <p class="bold">₹ 269</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/WarmSand-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          MYGLAMM POSE HD FOUNDATION STICK - WARM SAND
+        </p>
+        <p class="card-text dis">Nourishing, Matte, Skin-blurring Foundation</p>
+        <p class="bold">₹ 419</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Savag-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">MYGLAMM LIT MATTE EYELINER PENCIL - SAVAGE</p>
+        <p class="card-text dis">
+          Precision Eyeliner with Intense Colour Payoff
+        </p>
+        <p class="bold">₹ 445</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/open-product-side-bar.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">POPXO MAKEUP - INSTAGLAMM FACE KIT</p>
+        <p class="card-text dis">
+          3-in-1 blush, setting powder, and highlighter palette
+        </p>
+        <p class="bold">₹ 259</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/BRDF-(1)_1.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">MYGLAMM LIT BROW DEFINER PENCIL</p>
+        <p class="card-text dis">Define & Sculpt Browliner</p>
+        <p class="bold">₹ 495</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Artboard-1_5.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          MYGLAMM SUPERFOODS COLOR POP LIP BALM - CHERRY - 4.6G
+        </p>
+        <p class="card-text dis">
+          Smooth, tinted lip balm with natural extracts
+        </p>
+        <p class="bold">₹ 128</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Artboard-1_5.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          MYGLAMM SUPERFOODS COLOR POP LIP BALM - CHERRY - 4.6G
+        </p>
+        <p class="card-text dis">
+          Smooth, tinted lip balm with natural extracts
+        </p>
+        <p class="bold">₹ 185</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Artboard-1_5.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          MYGLAMM SUPERFOODS COLOR POP LIP BALM - CHERRY - 4.6G
+        </p>
+        <p class="card-text dis">
+          Smooth, tinted lip balm with natural extracts
+        </p>
+        <p class="bold">₹ 399</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Banan-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">MYGLAMM POSE HD BANANA POWDER - YELLOW</p>
+        <p class="card-text dis">HD Yellow Setting Powder</p>
+        <p class="bold">₹ 524</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/RYMRN-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">MYGLAMM PURE LOVE SINDOOR - ROYAL MAROON</p>
+        <p class="card-text dis">Liquid Matte Sindoor</p>
+        <p class="bold">₹ 166</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/SayNomre-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">MYGLAMM LIT NAIL ENAMEL - SAY NO MORE</p>
+        <p class="card-text dis">Chip-resistant, Glossy Nail Enamel</p>
+        <p class="bold">₹ 190</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Hghd-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          MYGLAMM POSE HD HIGHLIGHTER DUO - CHAMPAGNE | ROSE GOLD
+        </p>
+        <p class="card-text dis">HD Ultra Shimmer Highlighter</p>
+        <p class="bold">₹ 489</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/6-Precision-Liquid-Felt-Tip-Eyeliner-post-1-Black-Diamond.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          MANISH MALHOTRA PRECISION LIQUID FELT TIP EYELINER - BLACK DIAMOND
+        </p>
+        <p class="card-text dis">
+          Intense Longwear Liquid Eyeliner Pen | Made in Germany
+        </p>
+        <p class="bold">₹ 671</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Radiance-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          TREAT LOVE CARE BRIGHTENING FOUNDATION - RADIANCE
+        </p>
+        <p class="card-text dis">
+          Liquid Foundation With Buildable Coverage, Enriched With Vitamins And
+          Yeast Extracts
+        </p>
+        <p class="bold">₹ 796</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/LP1_4.png"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">POPXO FIRST KISS LIP BALM SPF 15</p>
+        <p class="card-text dis">Lip Balm For Sun Lovers</p>
+        <p class="bold">₹ 129</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/Goodwife-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">
+          MYGLAMM LIT SATIN MATTE LIPSTICK - THE GOOD WIFE
+        </p>
+        <p class="card-text dis">
+          Hi-Wattage 3D Satin Matte Finish Lipstick With Intense Colour Payoff
+        </p>
+        <p class="bold">₹ 321</p>
+      </div>
+      <div class="card p-4">
+        <img
+          src="https://files.myglamm.com/site-images/800x800/PseStngPwd-(1).jpg"
+          alt=""
+          class="img-fluid card-img-top"
+        />
+        <p class="card-title tit">MYGLAMM POSE HD SETTING POWDER - IVORY</p>
+        <p class="card-text dis">HD Translucent Pressed Setting Powder</p>
+        <p class="bold">₹ 524</p>
       </div>
     </div>
-
-    <!-- End => Signup -->
 
     <!-- Start = > Footer -->
 
@@ -736,81 +1078,20 @@
     <!-- End = > Footer -->
   </body>
 </html>
-
 <script>
-  document.querySelector("#Submit").addEventListener("click", fun);
+  let Display = document.getElementById("Display-Name");
 
-  let DataArr = JSON.parse(localStorage.getItem("input")) || [];
+  let GetName = JSON.parse(localStorage.getItem("GetName"));
 
-  let flag;
+  GetName.map(function (ele) {
+    Display.append(ele.FirstName);
+  });
 
-  function fun(event) {
-    event.preventDefault();
-    let FirstName = document.getElementById("First-Name").value;
+  Display.addEventListener("click",JaaBhai)
 
-    let LastName = document.getElementById("Last-Name").value;
-
-    let Email = document.getElementById("Email").value;
-
-    let Mobile = document.getElementById("Mobile").value;
-
-    let Password = document.getElementById("Password").value;
-
-    DataArr.map(function (ele) {
-      if (ele.Email == Email) {
-        return (flag = true);
-      }
-    });
-
-    if (FirstName == "") {
-      alert("Please fill Your First Name");
-    } else if (LastName == "") {
-      alert("Please fill Your Last Name");
-    } else if (Email == "") {
-      alert("Please fill Your Email");
-    } else if (Mobile == "") {
-      alert("Please fill Your Mobile Number");
-    } else if (Password == "") {
-      alert("Please fill Your Passsword");
-    } else if (flag == true) {
-      alert("Already registered User Please Login");
-      window.location = "Login.html";
-    } else {
-      let DataObj = {
-        FirstName,
-        LastName,
-        Email,
-        Mobile,
-        Password,
-      };
-      DataArr.push(DataObj);
-
-      localStorage.setItem("input", JSON.stringify(DataArr));
-
-      window.location = "Login.html";
-    }
-    // if (
-    //   FirstName==""||
-    //   LastName == "" ||
-    //   Email == "" ||
-    //   Mobile == "" ||
-    //   Password == "" ||
-    //   flag == true
-    // ) {
-    //   alert("Please fill the Correct information");
-    // } else {
-    //   let DataObj = {
-    //     FirstName,
-    //     LastName,
-    //     Email,
-    //     Mobile,
-    //     Password,
-    //   };
-    //   DataArr.push(DataObj);
-
-    //   localStorage.setItem("input", JSON.stringify(DataArr));
-
-    //   window.location = "Login.html";
-    // }
+  function JaaBhai()
+  {
+    localStorage.removeItem("GetName")
+    window.location="index.html"
   }
 </script>
