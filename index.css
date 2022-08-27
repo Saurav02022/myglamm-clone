@@ -178,3 +178,9 @@ img[src="https://files.myglamm.com/site-images/original/2240x614-copy_6.jpg"]
   margin-top:15px;
   height:30px;
 }
+
+#Display-Name:hover{
+  cursor: pointer;
+  font-size:30px;
+  color: red;
+}
