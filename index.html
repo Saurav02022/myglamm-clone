@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buy International Beauty Products</title>
 
-    <link rel="stylesheet" href="./BootStrap/bootstrap.css" />
+    <link rel="stylesheet" href="./styles/./BootStrap/bootstrap.css" />
 
-    <link rel="stylesheet" href="SlideShow.css" />
+    <link rel="stylesheet" href="./styles/SlideShow.css" />
 
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
 
     <link
       rel="icon"
@@ -24,100 +24,11 @@
   </head>
   <body>
     <!-- Start => NavBar -->
-    <div class="container-fluid pink fixed-top">
-      <div class="container">
-        <div class="row">
-          <div class="col" id="FLAT">
-            <img src="https://www.myglamm.com/images/gift.svg" alt="" />
-            <p>FLAT 199 Store</p>
-            <a href="#" id="Shop-Now" class="decoration">SHOP NOW</a>
-          </div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col">
-            <img src="https://www.myglamm.com/images/shop.svg" alt="" />
-            <a href="" class="decoration" style="color: black; font-size: 14px"
-              >MyGlamm Store</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid sticky-top mt-5" id="NavBar">
-      <div class="container" id="NavBar-First">
-        <div class="row">
-          <div class="col marginTop" id="Company-Image">
-            <img
-              src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg"
-              alt=""
-            />
-            <form action="" class="form inline">
-              <input
-                type="search"
-                name=""
-                id="input"
-                placeholder="Find Lipstick,Eyeliner,Makeup Tutorial ,etc"
-                class="form-control"
-              />
-            </form>
-          </div>
-
-          <div class="col marginTop">
-            <div class="row">
-              <div class="col"></div>
-              <div class="col" style="display: flex">
-                <a href=""
-                  ><img
-                    src="https://img.icons8.com/ios/50/000000/shopping-cart.png"
-                /></a>
-                <a href="SignUp.html">
-                  <img
-                    src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/external-user-interface-kiranshastry-gradient-kiranshastry-1.png"
-                    alt=""
-                  />
-                </a>
-                <p id="Display-Name"></p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Second -->
-      <div class="container">
-        <ul class="nav" id="Link">
-          <li class="nav-item active">
-            <a href="index.html" class="nav-link active black">HOME</a>
-          </li>
-          <li class="nav-item active">
-            <a href="MakeUp.html" class="nav-link active black">MAKEUP</a>
-          </li>
-          <li class="nav-item active">
-            <a href="" class="nav-link active black">HAIRCARE</a>
-          </li>
-          <li class="nav-item active">
-            <a href="" class="nav-link active black">SKINCARE</a>
-          </li>
-          <li class="nav-item active">
-            <a href="" class="nav-link active black">SANITIZING CARE</a>
-          </li>
-          <li class="nav-item active">
-            <a href="" class="nav-link active black">COLLECTION</a>
-          </li>
-          <li class="nav-item active">
-            <a href="" class="nav-link active black">REWARDS</a>
-          </li>
-          <li class="nav-item active">
-            <a href="" class="nav-link active black">MYGLAMM STUDIO</a>
-          </li>
-          <li class="nav-item active">
-            <a href="" class="nav-link active black">OFFERS</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <nav></nav>
     <!-- End = > NavBar -->
+
+    <!-- Start =>slideShow -->
+
     <div id="SlideShow">
       <div class="slideshow-container">
         <div class="mySlides fade">
@@ -187,7 +98,8 @@
       </script>
     </div>
 
-    <div class="container" id="Redeem-50">
+    <!-- End =>slideShow -->
+    <div class="singleImage">
       <a href="">
         <img
           src="https://files.myglamm.com/site-images/original/2240x614-copy_6.jpg"
@@ -197,56 +109,58 @@
       </a>
     </div>
 
-    <h1 class="Spot-h1">IN THE SPOTLIGHT</h1>
+    <h1 class="h1">IN THE SPOTLIGHT</h1>
 
-    <div class="container" id="Spot-Image">
-      <div>
+    <div id="SPOTLIGHT">
+      <div style="text-align: center">
         <a href="#">
           <img
             src="https://files.myglamm.com/site-images/original/700x488-avc.jpg"
             alt=""
-            class="img-fluid"
+            width="100%"
           />
         </a>
 
-        <h5 class="Spot-bottom">Flat 50% Off</h5>
+        <h5>Flat 50% Off</h5>
       </div>
-      <div>
+
+      <div style="text-align: center">
         <a href="#">
           <img
             src="https://files.myglamm.com/site-images/original/700x488-avc_1.jpg"
             alt=""
-            class="img-fluid"
+            width="100%"
           />
         </a>
 
-        <h5 class="Spot-bottom">Lit Liquid Matte Lipsticlk</h5>
+        <h5>Lit Liquid Matte Lipsticlk</h5>
       </div>
-      <div>
+
+      <div style="text-align: center">
         <a href="#">
           <img
             src="https://files.myglamm.com/site-images/original/In-the-Spotlight-700x488.jpg"
             alt=""
-            class="img-fluid"
+            width="100%"
           />
         </a>
 
-        <h5 class="Spot-bottom">Makeup under Rs.399</h5>
+        <h5>Makeup under Rs.399</h5>
       </div>
     </div>
 
-    <div class="container" id="Liquid-LipStick">
+    <div class="singleImage">
       <a href="#">
         <img
           src="https://files.myglamm.com/site-images/original/2240x614-C_6.gif"
           alt=""
-          class="img-fluid"
+          width="100%"
         />
       </a>
     </div>
 
-    <div class="container" id="Coffee">
-      <a href="">
+    <div class="singleImage">
+      <a href="#">
         <img
           src="https://files.myglamm.com/site-images/original/2240x614-Sleek-desktop_1.gif"
           alt=""
@@ -255,390 +169,329 @@
       </a>
     </div>
 
-    <h1 class="Spot-h1">BANK TRANSFER</h1>
+    <h1 class="h1">BANK TRANSFER</h1>
 
-    <div class="container" id="Bank-Transfer">
-      <div class="shadow-lg p-3 mb-5 bg-white rounded">
-        <a href="">
+    <div id="bankTransfer">
+      <div style="border: 1px solid #ccc; padding: 10px">
+        <a href="#">
           <img
             src="https://files.myglamm.com/site-images/original/IDFC-offer-3360x279_4.jpg"
             alt=""
-            class="img-fluid"
+            width="100%"
           />
         </a>
-
         <h5 class="text-center mt-3">IDFC FIRST BANK</h5>
-        <p class="text-center">IDFC FIRST BANK</p>
       </div>
 
-      <div id="last-img" class="shadow-lg p-3 mb-5 bg-white rounded">
-        <a href="">
+      <div style="border: 1px solid #ccc; padding: 10px">
+        <a href="#">
           <img
             src="https://files.myglamm.com/site-images/original/IDFC-offer-3360x279_3.jpg"
             alt=""
-            class="img-fluid"
+            width="100%"
           />
         </a>
 
         <h5 class="text-center mt-3">Au Small Finance Bank</h5>
-        <p class="text-center">Au Small Finance Bank</p>
       </div>
     </div>
 
-    <h1 class="Spot-h1">BESTSELLERS</h1>
+    <h1 class="h1">BESTSELLERS</h1>
 
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col" id="card-1">
-          <div class="card">
+    <div id="BESTSELLERS">
+      <div>
+        <img
+          src="https://files.myglamm.com/site-images/400x400/OTTP-(1).jpg"
+          alt=""
+        />
+        <div class="text-center">
+          <h6>MyGlamm LIT Liquid Matte Lipstick</h6>
+          <p>Moringa Oil Enriched Matte Lipstick</p>
+          <p>4.9 || 13568 ratings</p>
+          <p>₹ 395</p>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="https://files.myglamm.com/site-images/400x400/Soft-Matte-post-1-Poppy-Pink.jpg"
+          alt=""
+        />
+        <div class="text-center">
+          <h6>Manish Malhotra Soft Matte Lipstick</h6>
+          <p>Hydrating Long-wear Lpstick</p>
+          <p>4.9 || 611 ratings</p>
+          <p>₹ 617</p>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="https://files.myglamm.com/site-images/400x400/Facewash_3.jpg"
+          alt=""
+        />
+        <div class="text-center">
+          <h6>MyGlamm WIPEOUT Gream Killing...</h6>
+          <p>Tea Tree Oil & Vitamin E-infused Face Wash</p>
+          <p>4.9 || 676 ratings</p>
+          <p>₹ 107</p>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="https://files.myglamm.com/site-images/400x400/Hi-Shine-Post-1-Mauve-Struck.jpg"
+          alt=""
+        />
+        <div class="text-center">
+          <h6>Manish Malhotra Hi-Shine Lipstick</h6>
+          <p>Lightweight,Long-wear Lipsticks</p>
+          <p>4.9 || 666 ratings</p>
+          <p>₹ 386</p>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="h1">ESSENTIAL BUDGET BUYS</h1>
+
+    <div id="Budget">
+      <div class="col">
+        <div>
+          <a href="#">
             <img
-              src="https://files.myglamm.com/site-images/400x400/OTTP-(1).jpg"
+              src="https://files.myglamm.com/site-images/original/combo-Banner--700-x-488_1.jpg"
               alt=""
-              class="card-img-top img-fluid w-75"
+              width="100%"
             />
-            <div class="card-body w-70 text-center">
-              <h6 class="card-tittle small">
-                MyGlamm LIT Liquid Matte Lipstick
-              </h6>
-              <p class="card-text small">Moringa Oil Enriched Matte Lipstick</p>
-              <p class="card-text">4.9 || 13568 ratings</p>
-              <p class="card-text">₹ 395</p>
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="col" id="card-1">
-          <div class="card">
+        <h4 class="text-center">Wipeout</h4>
+      </div>
+
+      <div class="col">
+        <div>
+          <a href="#">
             <img
-              src="https://files.myglamm.com/site-images/400x400/Soft-Matte-post-1-Poppy-Pink.jpg"
+              src="https://files.myglamm.com/site-images/original/Glamm-Picks-700x488.jpg"
               alt=""
-              class="card-img-top img-fluid w-75"
+              width="100%"
             />
-            <div class="card-body w-70 text-center">
-              <h6 class="card-tittle small">
-                Manish Malhotra Soft Matte Lipstick
-              </h6>
-              <p class="card-text small">Hydrating Long-wear Lpstick</p>
-              <p class="card-text">4.9 || 611 ratings</p>
-              <p class="card-text">₹ 617</p>
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="col" id="card-1">
-          <div class="card">
+        <h4 class="text-center">Under 499 Store</h4>
+      </div>
+
+      <div class="col">
+        <div>
+          <a href="">
             <img
-              src="https://files.myglamm.com/site-images/400x400/Facewash_3.jpg"
+              src="https://files.myglamm.com/site-images/original/Glamm-Must-haves-desktop.jpg"
               alt=""
-              class="card-img-top img-fluid w-75"
+              width="100%"
             />
-            <div class="card-body w-70 text-center">
-              <h6 class="card-tittle small">
-                MyGlamm WIPEOUT Gream Killing...
-              </h6>
-              <p class="card-text small">
-                Tea Tree Oil & Vitamin E-infused Face Wash
-              </p>
-              <p class="card-text">4.9 || 676 ratings</p>
-              <p class="card-text">₹ 107</p>
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="col" id="card-1">
-          <div class="card">
+        <h4 class="text-center">Under 999 Store</h4>
+      </div>
+    </div>
+
+    <h1 class="h1">SHOP FROM CATEGORIES</h1>
+
+    <div id="CATEGORIES">
+      <div>
+        <div class="rounded-circle">
+          <a href="#">
             <img
-              src="https://files.myglamm.com/site-images/400x400/Hi-Shine-Post-1-Mauve-Struck.jpg"
+              src="https://files.myglamm.com/site-images/original/SKin-1-2.png"
               alt=""
-              class="card-img-top img-fluid w-75"
+          /></a>
+        </div>
+        <p class="text-center small mt-2">skin</p>
+      </div>
+      <div>
+        <div class="rounded-circle">
+          <a href="#">
+            <img
+              src="https://files.myglamm.com/site-images/original/Lips-3.png"
+              alt=""
             />
-            <div class="card-body w-70 text-center">
-              <h6 class="card-tittle small">
-                Manish Malhotra Hi-Shine Lipstick
-              </h6>
-              <p class="card-text small">Lightweight,Long-wear Lipsticks</p>
-              <p class="card-text">4.9 || 666 ratings</p>
-              <p class="card-text">₹ 386</p>
-            </div>
-          </div>
+          </a>
         </div>
+        <p class="text-center small mt-2">Lips</p>
+      </div>
+      <div>
+        <div class="rounded-circle">
+          <a href="#">
+            <img
+              src="https://files.myglamm.com/site-images/original/Superfoods-Model-120-X-120-px_2.jpg"
+              alt=""
+            />
+          </a>
+        </div>
+        <p class="text-center small mt-2">Hair</p>
+      </div>
+      <div>
+        <div class="rounded-circle">
+          <a href="#">
+            <img
+              src="https://files.myglamm.com/site-images/original/Eyes-4.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <p class="text-center small mt-2">Eyes</p>
+      </div>
+      <div>
+        <div class="rounded-circle">
+          <a href="#">
+            <img
+              src="https://files.myglamm.com/site-images/original/Face-5.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <p class="text-center small mt-2">Face</p>
+      </div>
+      <div>
+        <div class="rounded-circle">
+          <a href="#">
+            <img
+              src="https://files.myglamm.com/site-images/original/Nails-1.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <p class="text-center small mt-2">Nails</p>
+      </div>
+      <div>
+        <div class="rounded-circle">
+          <a href="#">
+            <img
+              src="https://files.myglamm.com/site-images/original/App-PersonalCare_2.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <p class="text-center small mt-2">Sanitizing Care</p>
+      </div>
+      <div>
+        <div class="rounded-circle">
+          <a href="#">
+            <img
+              src="https://files.myglamm.com/site-images/original/Bath.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <p class="text-center small mt-2">Bath & Body</p>
       </div>
     </div>
 
-    <h1 class="Spot-h1">ESSENTIAL BUDGET BUYS</h1>
+    <h1 class="h1">WALLET OFFERS</h1>
 
-    <div class="container mt-4" id="Budget">
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/combo-Banner--700-x-488_1.jpg"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-          <h4 class="text-center">Wipeout</h4>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/Glamm-Picks-700x488.jpg"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-          <h4 class="text-center">Under 499 Store</h4>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/Glamm-Must-haves-desktop.jpg"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-          <h4 class="text-center">Under 999 Store</h4>
-        </div>
+    <div id="Wallet-Offers">
+      <a href="#">
+        <img
+          src="https://offercdn.paytm.com/blog/2019/09/UPI-sweepstakes-banner_50-cashback.jpg"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+      </a>
+
+      <a href="#">
+        <img
+          src="https://www.hdfcbank.com/content/api/contentstream-id/723fb80a-2dde-42a3-9793-7ae1be57c87f/f16c200f-7341-4e26-a51e-fa210112a24d/Common/Campaign/Images/2022/June-2022/17/CC-Acq-17Jun-Banner-667x210-1.jpg"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+      </a>
+
+      <a href="#">
+        <img
+          src="https://offercdn.paytm.com/blog/2019/09/UPI-sweepstakes-banner_50-cashback.jpg"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+      </a>
+    </div>
+
+    <h1 class="h1">KITS & KOMBOS</h1>
+
+    <div id="KOMBOS">
+      <div>
+        <a href="#">
+          <img
+            src="https://files.myglamm.com/site-images/original/desktop-mk-combo.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </a>
+
+        <h6>Makeup Combos</h6>
+      </div>
+
+      <div>
+        <a href="#">
+          <img
+            src="https://files.myglamm.com/site-images/original/desktop-skin-combo.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </a>
+
+        <h6>SkinCare Combos</h6>
+      </div>
+
+      <div>
+        <a href="#">
+          <img
+            src="https://files.myglamm.com/site-images/original/Desktop-combo.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </a>
+
+        <h6>BeautyKits Under 499</h6>
       </div>
     </div>
 
-    <h1 class="Spot-h1">SHOP FROM CATEGORIES</h1>
-
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col">
-          <div class="card rounded-circle">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/SKin-1-2.png"
-                alt=""
-                class="card-img-top img-fluid"
-            /></a>
-          </div>
-          <p class="text-center small mt-2">skin</p>
-        </div>
-        <div class="col">
-          <div class="card rounded-circle">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/Lips-3.png"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-          <p class="text-center small mt-2">Lips</p>
-        </div>
-        <div class="col">
-          <div class="card rounded-circle">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/Superfoods-Model-120-X-120-px_2.jpg"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-          <p class="text-center small mt-2">Hair</p>
-        </div>
-        <div class="col">
-          <div class="card rounded-circle">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/Eyes-4.png"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-          <p class="text-center small mt-2">Eyes</p>
-        </div>
-        <div class="col">
-          <div class="card rounded-circle">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/Face-5.png"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-          <p class="text-center small mt-2">Face</p>
-        </div>
-        <div class="col">
-          <div class="card rounded-circle">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/Nails-1.png"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-          <p class="text-center small mt-2">Nails</p>
-        </div>
-        <div class="col">
-          <div class="card rounded-circle">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/App-PersonalCare_2.png"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-          <p class="text-center small mt-2">Sanitizing Care</p>
-        </div>
-        <div class="col">
-          <div class="card rounded-circle">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/Bath.png"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-          <p class="text-center small mt-2">Bath & Body</p>
-        </div>
-      </div>
-    </div>
-
-    <h1 class="Spot-h1">WALLET OFFERS</h1>
-
-    <div class="container mt-4" id="Wallet-Offers">
-      <div class="row">
-        <div class="col">
-          <div class="card" id="Wallet-Offers">
-            <a href="">
-              <img
-                src="https://offercdn.paytm.com/blog/2019/09/UPI-sweepstakes-banner_50-cashback.jpg"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" id="Wallet-Offers">
-            <a href="">
-              <img
-                src="https://www.hdfcbank.com/content/api/contentstream-id/723fb80a-2dde-42a3-9793-7ae1be57c87f/f16c200f-7341-4e26-a51e-fa210112a24d/Common/Campaign/Images/2022/June-2022/17/CC-Acq-17Jun-Banner-667x210-1.jpg"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" id="Wallet-Offers">
-            <a href="">
-              <img
-                src="https://offercdn.paytm.com/blog/2019/09/UPI-sweepstakes-banner_50-cashback.jpg"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" id="Wallet-Offers">
-            <a href="">
-              <img
-                src="https://www.hdfcbank.com/content/api/contentstream-id/723fb80a-2dde-42a3-9793-7ae1be57c87f/f16c200f-7341-4e26-a51e-fa210112a24d/Common/Campaign/Images/2022/June-2022/17/CC-Acq-17Jun-Banner-667x210-1.jpg"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <h1 class="Spot-h1">KITS & KOMBOS</h1>
-
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/desktop-mk-combo.jpg"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-
-            <div class="card-body">
-              <h6 class="card-tittle small fw-bolder text-center mt-2">
-                Makeup Combos
-              </h6>
-              <p class="card-text small text-center">Makeup Combos</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/desktop-skin-combo.jpg"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-
-            <div class="card-body">
-              <h6 class="card-tittle small fw-bolder text-center mt-2">
-                SkinCare Combos
-              </h6>
-              <p class="card-text small text-center">SkinCare Combos</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="">
-              <img
-                src="https://files.myglamm.com/site-images/original/Desktop-combo.jpg"
-                alt=""
-                class="card-img-top img-fluid"
-              />
-            </a>
-
-            <div class="card-body">
-              <h6 class="card-tittle small fw-bolder text-center mt-2">
-                BeautyKits Under 499
-              </h6>
-              <p class="card-text small text-center">BeautyKits Under 499</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-4">
-      <a href="">
+    <div class="singleImage">
+      <a href="#">
         <img
           src="https://files.myglamm.com/site-images/original/Community-Banner-2240-x-344_1.jpg"
           alt=""
-          class="img-fluid shadow p-3 mb-5 bg-white rounded"
+          width="100%"
+          height="100%"
         />
       </a>
     </div>
 
-    <div class="container mt-4 w-75">
-      <a href="">
+    <div class="singleImage">
+      <a href="#">
         <img
           src="https://files.myglamm.com/site-images/original/disclaimer-mgp_1.png"
           alt=""
-          class="img-fluid"
+          width="100%"
+          height="100%"
         />
       </a>
     </div>
 
-    <video width="100%" height="710" controls autoplay loop muted class="mt-2">
+    <video
+      width="100%"
+      height="501px"
+      controls
+      autoplay
+      loop
+      muted
+      class="mt-3"
+    >
       <source
         src="https://www.myglamm.com/images/TellMyGlammWhatYouWant.webm"
         type="video/mp4"
@@ -648,556 +501,21 @@
 
     <!-- Start = > Footer -->
 
-    <div class="container-fluid mt-4 shadow-lg p-3 mb-5 bg-white rounded">
-      <div class="container mt-3" id="Footer">
-        <div class="row">
-          <div class="col">
-            <a
-              href=""
-              class="text-wrap text-decoration-none lead text-secondary size mb-4"
-              >LIPS</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Matte Lipstick</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipstick</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Liquid Lipstick</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Gloss</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Hi-Shine Lipgloss</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Liner</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Balm</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Glitter</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Stain</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lipstick Set</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lip Kit</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Find Your Lipstick</a
-            >
-            <br />
-          </div>
-
-          <div class="col">
-            <a
-              href=""
-              class="text-wrap text-decoration-none lead text-secondary size"
-              >FACE</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Face Sets</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Fixing Powder</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Primer</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Concealer</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Foundation</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Compact</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Banana Powder</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Highlighter</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Blush</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Bronzer</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Sindoor</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Setting Powder</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Makeup Accessories</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Makeup Brushes</a
-            >
-            <br />
-          </div>
-
-          <div class="col">
-            <a
-              href=""
-              class="text-wrap text-decoration-none lead text-secondary size"
-              >EYES</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Eye shadow</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Eyeliner</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Eyebrows</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Glitter</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Mascara</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Kajal</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Eyeshadow Brushes</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Eye Combos</a
-            >
-            <br />
-          </div>
-
-          <div class="col">
-            <a
-              href=""
-              class="text-wrap text-decoration-none lead text-secondary size"
-              >Nails</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Nail Polish</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Matte</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Nail Polish</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Nail Lacquer</a
-            >
-            <br />
-          </div>
-          <!-- Nails -->
-          <div class="col">
-            <a
-              href=""
-              class="text-wrap text-decoration-none lead text-secondary size"
-              >SKINCARE</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Moisturiser</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Night Cream</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Eye Cream</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Body lotion</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Serum</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Sunscreen</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Skincare Kits</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Cleansing Products</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Exfoliator & Scrub</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Face Wash</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Cleanser</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Mask</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Face Pack</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Sheet Mask</a
-            >
-            <br />
-          </div>
-
-          <div class="col">
-            <a
-              href=""
-              class="text-wrap text-decoration-none lead text-secondary size"
-              >BATH & BODY</a
-            >
-            <br />
-
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Shower Gels</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Soaps</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Body Lotion</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Body Spray & Mists</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Hand Wash</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Foot Cream</a
-            >
-            <br />
-          </div>
-          <div class="col">
-            <a
-              href=""
-              class="text-wrap text-decoration-none lead text-secondary size"
-              >SANITIZING CARE</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Sanitizing Wipes</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Sanitizing Kits</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Sanitizing Spray</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Hand Sanitizer</a
-            >
-            <br />
-          </div>
-
-          <div class="col">
-            <a
-              href=""
-              class="text-wrap text-decoration-none lead text-secondary size"
-              >KITS AND COMBOS</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Makeup Kits</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Bridal Makeup Kits</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Makeup Combo</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Makeup Gift Sets</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Cosmetics Kits & Combos</a
-            >
-            <br />
-          </div>
-          <div class="col">
-            <a
-              href=""
-              class="text-wrap text-decoration-none lead text-secondary size"
-              >HAIRS CARE</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Shampoo</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Conditioner</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Hair Oil</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Serum</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Hair Mask</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Combos</a
-            >
-            <br />
-          </div>
-
-          <div class="col">
-            <a
-              href=""
-              class="text-wrap text-decoration-none lead text-secondary size"
-              >MYGLAMMSTUDIO</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Style</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Lifestyle</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Trends</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Tips</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Beauty Tutorial</a
-            >
-            <br />
-          </div>
-          <div class="col">
-            <a
-              href=""
-              class="text-wrap text-decoration-none lead text-secondary size"
-              >KNOW MORE</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >About Us</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Exclusive Offers</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Refer & Earn</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >myglammPARTIES</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Store Locator</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Press & Media</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Terms & Conditions</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Privacy Policy</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Shipping and Delivery Policy</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Returns and Replacements</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >MyGlamm Rewards</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Loyalty Program Policy</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Sitemap</a
-            >
-            <br />
-            <a href="" class="text-wrap text-decoration-none small black size"
-              >Reponsible Disclosure</a
-            >
-            <br />
-          </div>
-        </div>
-        <div class="container" id="Most-Last">
-          <div class="row">
-            <div class="col">
-              <h5 class="size Suscribe">SUBSCRIBE FOR MYGLAMM EMAILS</h5>
-              <form action="">
-                <input type="text" />
-                <input type="submit" value="SUBSCRIBE NOW" class="mt-1" />
-              </form>
-            </div>
-            <div class="media">
-              <div class="row">
-                <div class="col" id="Icons">
-                  <p class="text-uppercase size mt-4">Stay Connected</p>
-                  <a href="">
-                    <img
-                      src="./BootStrap/node_modules/bootstrap-icons/icons/instagram.svg"
-                      alt=""
-                      class="img-fluid img-size"
-                    />
-                  </a>
-                  <a href="">
-                    <img
-                      src="./BootStrap/node_modules/bootstrap-icons/icons/twitter.svg"
-                      alt=""
-                      class="img-fluid img-size"
-                    />
-                  </a>
-                  <a href="">
-                    <img
-                      src="./BootStrap/node_modules/bootstrap-icons/icons/facebook.svg"
-                      alt=""
-                      class="img-fluid img-size"
-                    />
-                  </a>
-                  <a href="">
-                    <img
-                      src="./BootStrap/node_modules/bootstrap-icons/icons/youtube.svg"
-                      alt=""
-                      class="img-fluid img-size"
-                    />
-                  </a>
-                </div>
-                <div class="col">
-                  <h5 class="size Suscribe">
-                    EXPERIENCE THE MYGLAMM MOBILE APP
-                  </h5>
-                  <div class="row">
-                    <div class="col">
-                      <a href="">
-                        <img
-                          src="https://www.myglamm.com/images/iosStore.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </a>
-                    </div>
-                    <div class="col">
-                      <a href="">
-                        <img
-                          src="https://www.myglamm.com/images/playStore.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <footer></footer>
 
     <!-- End = > Footer -->
   </body>
 </html>
-<script>
+<script type="module">
+  import Navabr from "./components/navbar.js";
+  import Footer from "./components/footer.js";
+
+  const navbar = document.querySelector("nav");
+  navbar.innerHTML = Navabr();
+
+  const footer = document.querySelector("footer");
+  footer.innerHTML = Footer();
+
   let Display = document.getElementById("Display-Name");
 
   let GetName = JSON.parse(localStorage.getItem("GetName"));
@@ -1206,11 +524,10 @@
     Display.append(ele.FirstName);
   });
 
-  Display.addEventListener("click",JaaBhai)
+  Display.addEventListener("click", JaaBhai);
 
-  function JaaBhai()
-  {
-    localStorage.removeItem("GetName")
-    window.location="index.html"
+  function JaaBhai() {
+    localStorage.removeItem("GetName");
+    window.location = "index.html";
   }
 </script>

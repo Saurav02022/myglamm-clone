@@ -1,782 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LOGIN</title>
+    <link rel="stylesheet" href="./styles/./BootStrap/bootstrap.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
 
-    <link rel="stylesheet" href="./BootStrap/bootstrap.css" />
-
-    <link rel="stylesheet" href="SlideShow.css" />
-
-    <link rel="stylesheet" href="index.css" />
-
-    <link rel="icon" href="https://media.glassdoor.com/sqll/1375928/myglamm-squareLogo-1612962866480.png">
+    <link
+      rel="icon"
+      href="https://media.glassdoor.com/sqll/1375928/myglamm-squareLogo-1612962866480.png"
+    />
     <style>
-      #Form {
-        height: auto;
+      #form-div {
         width: 30%;
         margin: auto;
+        margin-top: 160px;
+        border: 1px solid #ccc;
+        padding: 20px;
       }
-      </style>
-</head>
-<body>
-     <!-- Start => NavBar -->
-     <div class="container-fluid pink fixed-top">
-        <div class="container">
-          <div class="row">
-            <div class="col" id="FLAT">
-              <img src="https://www.myglamm.com/images/gift.svg" alt="" />
-              <p>FLAT 199 Store</p>
-              <a href="#" id="Shop-Now" class="decoration">SHOP NOW</a>
-            </div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col">
-              <img src="https://www.myglamm.com/images/shop.svg" alt="" />
-              <a href="" class="decoration" style="color: black; font-size: 14px"
-                >MyGlamm Store</a
-              >
-            </div>
-          </div>
-        </div>
+      #form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      @media all and (min-width: 768px) and (max-width: 1024px) {
+        #form-div {
+          width: 51%;
+          margin-top: 200px;
+        }
+      }
+      @media all and (min-width: 374px) and (max-width: 767px) {
+        #form-div {
+          width: 80%;
+          margin-top: 280px;
+        }
+      }
+      @media all and (min-width: 320px) and (max-width: 375px) {
+        #form-div {
+          width: 80%;
+          margin-top: 350px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start => NavBar -->
+    <nav></nav>
+    <!-- End => NavBar -->
+
+    <!--Start=> Login Page -->
+
+    <div id="form-div">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <p>Get 15% Good Points back on every order</p>
+        <img
+          src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg"
+          alt="company-logo"
+        />
       </div>
-  
-      <div class="container-fluid sticky-top mt-5" id="NavBar">
-        <div class="container" id="NavBar-First">
-          <div class="row">
-            <div class="col marginTop" id="Company-Image">
-              <img
-                src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg"
-                alt=""
-              />
-              <form action="" class="form inline">
-                <input
-                  type="search"
-                  name=""
-                  id="input"
-                  placeholder="Find Lipstick,Eyeliner,Makeup Tutorial ,etc"
-                  class="form-control"
-                />
-              </form>
-            </div>
-  
-            <div class="col marginTop">
-              <div class="row">
-                <div class="col"></div>
-                <div class="col" style="display:flex ;">
-                  <a href=""
-                    ><img
-                      src="https://img.icons8.com/ios/50/000000/shopping-cart.png"
-                  /></a>
-                  <a href="SignUp.html">
-                    <img
-                      src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/64/external-user-interface-kiranshastry-gradient-kiranshastry-1.png"
-                      alt=""
-                    />
-                  </a>
-                  <p id="Display-Name"></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Second -->
-        <div class="container">
-          <ul class="nav" id="Link">
-            <li class="nav-item active">
-              <a href="index.html" class="nav-link active black">HOME</a>
-            </li>
-            <li class="nav-item active">
-              <a href="MakeUp.html" class="nav-link active black">MAKEUP</a>
-            </li>
-            <li class="nav-item active">
-              <a href="" class="nav-link active black">HAIRCARE</a>
-            </li>
-            <li class="nav-item active">
-              <a href="" class="nav-link active black">SKINCARE</a>
-            </li>
-            <li class="nav-item active">
-              <a href="" class="nav-link active black">SANITIZING CARE</a>
-            </li>
-            <li class="nav-item active">
-              <a href="" class="nav-link active black">COLLECTION</a>
-            </li>
-            <li class="nav-item active">
-              <a href="" class="nav-link active black">REWARDS</a>
-            </li>
-            <li class="nav-item active">
-              <a href="" class="nav-link active black">MYGLAMM STUDIO</a>
-            </li>
-            <li class="nav-item active">
-              <a href="" class="nav-link active black">OFFERS</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-  
-      <!-- End => NavBar -->
-  
-      <!--Start=> Login Page -->
-
-      <div class="container mt-4 shadow p-3 mb-5 bg-white rounded" id="Form">
-        <div class="row">
-          <div class="col">
-            <p class="text-center">Get 15% Good Points back on every order</p>
-            <img
-              src="https://www.myglamm.com/images/myglamm-logo.png"
-              alt=""
-              class="img-fluid"
-            />
-            <form action="">
-  
-              <div class="form-group">
-                <label for="">Email</label>
-                <input type="email" class="form-control mt-1" id="Email" />
-              </div>
-  
-              <div class="form-group">
-                <label for="">Password</label>
-                <input type="password" class="form-control mt-1" id="Password" />
-              </div>
-  
-              <div class="form-group">
-                <input
-                  type="submit"
-                  class="form-control mt-2 bg-primary text-white"
-                  id="Login"
-                  value="Login"
-                />
-              </div>
-  
-            </form>
-            <p class="text-center">
-              By Signing up you agree to our
-              <a
-                href="https://www.myglamm.com/policies"
-                class="text-decoration-none black font-weight-bold text-secondary"
-                >Terms & Conditions</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-
-<!-- End => Login Page -->
-
-   <!-- Start = > Footer -->
-
-   <div class="container-fluid mt-4 shadow-lg p-3 mb-5 bg-white rounded">
-    <div class="container mt-3" id="Footer">
-      <div class="row">
-        <div class="col">
+      <div>
+        <label for="">Email</label>
+        <input type="email" class="form-control mt-1" id="Email" />
+        <label for="">Password</label>
+        <input type="password" class="form-control mt-1" id="Password" />
+        <input
+          type="submit"
+          class="form-control mt-2 bg-primary text-white"
+          id="Login"
+          value="Login"
+        />
+        <p class="text-center">
+          By Signing up you agree to our
           <a
-            href=""
-            class="text-wrap text-decoration-none lead text-secondary size mb-4"
-            >LIPS</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Lipstick</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Matte Lipstick</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Hi-Shine Lipstick</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Liquid Lipstick</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Lip Gloss</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Hi-Shine Lipgloss</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Lip Liner</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Lip Balm</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Glitter</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Lip Stain</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Lipstick Set</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Lip Kit</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Find Your Lipstick</a
-          >
-          <br />
-        </div>
-
-        <div class="col">
-          <a
-            href=""
-            class="text-wrap text-decoration-none lead text-secondary size"
-            >FACE</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Face Sets</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Fixing Powder</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Primer</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Concealer</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Foundation</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Compact</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Banana Powder</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Highlighter</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Blush</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Bronzer</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Sindoor</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Setting Powder</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Makeup Accessories</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Makeup Brushes</a
-          >
-          <br />
-        </div>
-
-        <div class="col">
-          <a
-            href=""
-            class="text-wrap text-decoration-none lead text-secondary size"
-            >EYES</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Eye shadow</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Eyeliner</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Eyebrows</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Glitter</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Mascara</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Kajal</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Eyeshadow Brushes</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Eye Combos</a
-          >
-          <br />
-        </div>
-
-        <div class="col">
-          <a
-            href=""
-            class="text-wrap text-decoration-none lead text-secondary size"
-            >Nails</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Nail Polish</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Matte</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Nail Polish</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Nail Lacquer</a
-          >
-          <br />
-        </div>
-        <!-- Nails -->
-        <div class="col">
-          <a
-            href=""
-            class="text-wrap text-decoration-none lead text-secondary size"
-            >SKINCARE</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Moisturiser</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Night Cream</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Eye Cream</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Body lotion</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Serum</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Sunscreen</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Skincare Kits</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Cleansing Products</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Exfoliator & Scrub</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Face Wash</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Cleanser</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Mask</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Face Pack</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Sheet Mask</a
-          >
-          <br />
-        </div>
-
-        <div class="col">
-          <a
-            href=""
-            class="text-wrap text-decoration-none lead text-secondary size"
-            >BATH & BODY</a
-          >
-          <br />
-
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Shower Gels</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Soaps</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Body Lotion</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Body Spray & Mists</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Hand Wash</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Foot Cream</a
-          >
-          <br />
-        </div>
-        <div class="col">
-          <a
-            href=""
-            class="text-wrap text-decoration-none lead text-secondary size"
-            >SANITIZING CARE</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Sanitizing Wipes</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Sanitizing Kits</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Sanitizing Spray</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Hand Sanitizer</a
-          >
-          <br />
-        </div>
-
-        <div class="col">
-          <a
-            href=""
-            class="text-wrap text-decoration-none lead text-secondary size"
-            >KITS AND COMBOS</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Makeup Kits</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Bridal Makeup Kits</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Makeup Combo</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Makeup Gift Sets</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Cosmetics Kits & Combos</a
-          >
-          <br />
-        </div>
-        <div class="col">
-          <a
-            href=""
-            class="text-wrap text-decoration-none lead text-secondary size"
-            >HAIRS CARE</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Shampoo</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Conditioner</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Hair Oil</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Serum</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Hair Mask</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Combos</a
-          >
-          <br />
-        </div>
-
-        <div class="col">
-          <a
-            href=""
-            class="text-wrap text-decoration-none lead text-secondary size"
-            >MYGLAMMSTUDIO</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Style</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Lifestyle</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Trends</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Tips</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Beauty Tutorial</a
-          >
-          <br />
-        </div>
-        <div class="col">
-          <a
-            href=""
-            class="text-wrap text-decoration-none lead text-secondary size"
-            >KNOW MORE</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >About Us</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Exclusive Offers</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Refer & Earn</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >myglammPARTIES</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Store Locator</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Press & Media</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
+            href="https://www.myglamm.com/policies"
+            class="text-decoration-none black font-weight-bold text-secondary"
+            target="_blank"
             >Terms & Conditions</a
           >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Privacy Policy</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Shipping and Delivery Policy</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Returns and Replacements</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >MyGlamm Rewards</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Loyalty Program Policy</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Sitemap</a
-          >
-          <br />
-          <a href="" class="text-wrap text-decoration-none small black size"
-            >Reponsible Disclosure</a
-          >
-          <br />
-        </div>
-      </div>
-      <div class="container" id="Most-Last">
-        <div class="row">
-          <div class="col">
-            <h5 class="size Suscribe">SUBSCRIBE FOR MYGLAMM EMAILS</h5>
-            <form action="">
-              <input type="text" />
-              <input type="submit" value="SUBSCRIBE NOW" class="mt-1" />
-            </form>
-          </div>
-          <div class="media">
-            <div class="row">
-              <div class="col" id="Icons">
-                <p class="text-uppercase size mt-4">Stay Connected</p>
-                <a href="">
-                  <img
-                    src="./BootStrap/node_modules/bootstrap-icons/icons/instagram.svg"
-                    alt=""
-                    class="img-fluid img-size"
-                  />
-                </a>
-                <a href="">
-                  <img
-                    src="./BootStrap/node_modules/bootstrap-icons/icons/twitter.svg"
-                    alt=""
-                    class="img-fluid img-size"
-                  />
-                </a>
-                <a href="">
-                  <img
-                    src="./BootStrap/node_modules/bootstrap-icons/icons/facebook.svg"
-                    alt=""
-                    class="img-fluid img-size"
-                  />
-                </a>
-                <a href="">
-                  <img
-                    src="./BootStrap/node_modules/bootstrap-icons/icons/youtube.svg"
-                    alt=""
-                    class="img-fluid img-size"
-                  />
-                </a>
-                <p id="Display-Name"></p>
-              </div>
-              <div class="col">
-                <h5 class="size Suscribe">
-                  EXPERIENCE THE MYGLAMM MOBILE APP
-                </h5>
-                <div class="row">
-                  <div class="col">
-                    <a href="">
-                      <img
-                        src="https://www.myglamm.com/images/iosStore.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </a>
-                  </div>
-                  <div class="col">
-                    <a href="">
-                      <img
-                        src="https://www.myglamm.com/images/playStore.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </p>
       </div>
     </div>
-  </div>
 
-  <!-- End = > Footer -->
+    <!-- End => Login Page -->
 
-</body>
+    <!-- Start = > Footer -->
+
+    <footer></footer>
+
+    <!-- End = > Footer -->
+  </body>
 </html>
 
-<script>
+<script type="module">
+  import Navabr from "./components/navbar.js";
+  import Footer from "./components/footer.js";
 
-let Display = document.getElementById("Display-Name")
+  const navbar = document.querySelector("nav");
+  navbar.innerHTML = Navabr();
 
+  const footer = document.querySelector("footer");
+  footer.innerHTML = Footer();
 
+  let Display = document.getElementById("Display-Name");
 
-   document.getElementById("Login").addEventListener("click",fun)
-  
+  document.getElementById("Login").addEventListener("click", fun);
 
-  let GetData = JSON.parse(localStorage.getItem("input"))
+  let GetData = JSON.parse(localStorage.getItem("input"));
 
+  let GetName = [];
 
-
-   let GetName = [];
-
-  function fun()
-  {
+  function fun() {
     event.preventDefault();
-    GetData.forEach(function(ele,index){
-
+    GetData.forEach(function (ele, index) {
       let Email = document.getElementById("Email").value;
 
       let Password = document.getElementById("Password").value;
 
-      if(Email==ele.Email)
-      {
-        if(Password==ele.Password)
-        {
-          flag=true
+      if (Email == ele.Email) {
+        if (Password == ele.Password) {
+          flag = true;
 
-        GetName.push(ele)
-        localStorage.setItem("GetName",JSON.stringify(GetName))
-        }else{
-          flag=false
+          GetName.push(ele);
+          localStorage.setItem("GetName", JSON.stringify(GetName));
+        } else {
+          flag = false;
         }
       }
-      
-  })
+    });
 
-  if(flag===true){
-   window.location="MakeUp.html"
-  }else if(flag==false)
-  {
-    alert("Please Enter correct Detail")
-  }
+    if (flag === true) {
+      window.location = "MakeUp.html";
+    } else if (flag == false) {
+      alert("Please Enter correct Detail");
+    }
   }
 
-let name = JSON.parse(localStorage.getItem("GetName"))
+  let name = JSON.parse(localStorage.getItem("GetName"));
 
-name.map(function(ele){
-Display.append(ele.FirstName)
-})
-Display.addEventListener("click",JaaBhai)
+  name.map(function (ele) {
+    Display.append(ele.FirstName);
+  });
+  Display.addEventListener("click", JaaBhai);
 
-function JaaBhai()
-{
-  localStorage.removeItem("GetName")
-  window.location="index.html"
-}
-  
+  function JaaBhai() {
+    localStorage.removeItem("GetName");
+    window.location = "index.html";
+  }
 </script>
